@@ -8,14 +8,12 @@ repository.workspace = true
 version.workspace = true
 
 [features]
-default = ["std", "keccak"]
+default = ["std"]
 std = [
     "dep:thiserror",
     "swiftness_transcript/std",
     "starknet-crypto/std",
 ]
-keccak = []
-blake2s = []
 test_fixtures = []
 
 [dependencies]
@@ -28,3 +26,4 @@ thiserror = { optional = true, workspace = true }
 thiserror-no-std.workspace = true
 
 swiftness_transcript.workspace = true
+swiftness_commitment.workspace = true
